@@ -1,0 +1,97 @@
+/* ---------------------- component welcome --------------------------*/
+.welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.welcome__section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30%;
+}
+
+.welcome__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50%;
+  width: 100%;
+}
+
+.welcome__text {
+  text-decoration: none;
+  width: 60%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #eeeff5;
+}
+
+.welcome__btn {
+  border: none;
+  background-color: inherit;
+  width: 20%;
+}
+
+.welcome__img {
+  width: 100%;
+}
+
+.welcome__title1 {
+  color: #eeeff5;
+  font-size: 2rem;
+}
+
+.welcome__title {
+  margin: auto;
+  color: #eeeff5;
+  font-size: 4.5em;
+  top: 30%;
+  cursor: default;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50%;
+  -webkit-animation: bounce 1s ease infinite alternate;
+  -webkit-text-stroke: .1px #d5c4ff;
+  text-align: center;
+  line-height: 100px;
+  text-shadow: 0 1px 0 #595959, 0 2px 0 #363636, 0 3px 0 #404040, 0 4px 0 #414142, 0 5px 0 #202020, 0 6px 0 #373636f0, 0 7px 0 #2e2d2de6, 0 8px 0 #2c2c2cd6, 0 9px 0 #202020de, 0 10px 10px #7c3fb5;
+}
+
+@-webkit-keyframes bounce {
+  100% {
+    top: -30px;
+    text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 #CCC, 0 7px 0 #CCC, 0 8px 0 #CCC, 0 9px 0 #CCC, 0 30px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,155 @@
+.friends {
+  font-family: 'Arbutus Slab', serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90%;
+}
+
+.friends__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid white;
+  background-color: gainsboro;
+  color: slategrey;
+}
+
+.friends__title {
+  font-size: 1.5rem;
+}
+
+.friends__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.friends__btn {
+  color: slategray;
+  font-weight: bold;
+  width: 30%;
+  border: none;
+  background-color: lavender;
+}
+
+.friends__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.friends__link {
+  width: 90%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 27%;
+}
+
+.friends__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 15px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  background-color: gainsboro;
+  color: slategrey;
+}
+
+.friends__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.friends__name {
+  font-size: 1rem;
+}
+
+.friends__photo {
+  border-radius: 50%;
+}
+
+.friends__delete {
+  color: slategray;
+  font-weight: bold;
+  width: 100%;
+  border: none;
+  background-color: lavender;
+}
+
+.friends__wishes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid white;
+  height: 66%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 52%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  overflow-x: auto;
+}
+
+.friends__wisheslist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.friends__wish {
+  margin: 0.5rem;
+  border-radius: 15px;
+}
+/*# sourceMappingURL=index.css.map */

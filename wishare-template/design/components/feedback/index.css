@@ -1,0 +1,13 @@
+.feedback {
+  border: 1px solid white;
+  background-color: #cfc0ff;
+  border-radius: 15px;
+  width: 60%;
+  margin-bottom: 5%;
+}
+
+.feedback__message {
+  color: grey;
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */

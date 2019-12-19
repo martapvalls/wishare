@@ -1,0 +1,43 @@
+{
+  "name": "wishare-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "moment": "^2.24.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "wishare-util": "file:../wishare-util"
+  },
+  "devDependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "node-sass": "^4.13.0",
+    "wishare-data": "file:../wishare-data"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --runInBand --no-cache",
+    "test:debug": "react-scripts inspect test --runInBand --no-cache",
+    "sass": "sass index.sass index.css",
+    "sass:watch": "sass --watch index.sass index.css",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

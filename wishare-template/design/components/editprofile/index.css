@@ -1,0 +1,102 @@
+.editprofile {
+  font-family: 'Arbutus Slab', serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.editprofile__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid white;
+  background-color: gainsboro;
+  color: slategrey;
+}
+
+.editprofile__title {
+  font-size: 1.5rem;
+}
+
+.editprofile__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.editprofile__btn {
+  color: slategray;
+  font-weight: bold;
+  width: 30%;
+  border: none;
+  background-color: lavender;
+}
+
+.editprofile__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  border: 1px solid white;
+  border-radius: 20px;
+  height: 93%;
+  background-color: #dcdcdcb8;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.editprofile__field {
+  border-radius: 20px;
+  background-color: inherit;
+  margin-bottom: 1rem;
+  width: 50%;
+  color: #eeeff5;
+}
+
+.editprofile__description {
+  width: 60%;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.editprofile__submit {
+  border-radius: 15px;
+  color: slategray;
+  font-weight: bold;
+  width: 18%;
+  border: none;
+  background-color: lavender;
+  height: 10%;
+}
+/*# sourceMappingURL=index.css.map */

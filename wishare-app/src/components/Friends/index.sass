@@ -1,0 +1,90 @@
+.friends
+    font-family: 'Arbutus Slab', serif
+    display: flex
+    flex-direction: column
+    height: 90%
+    background: url(https://i.gyazo.com/16cd75edd84b6ad239c6275342a7ded3.png)
+    &__header
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        border-bottom: 1px solid white
+        background-color: #625b5b85
+        color: white
+    &__title
+        font-size: 1.5rem
+    &__buttons
+        display: flex
+        width: 100%
+        justify-content: space-around
+    &__btn
+        color: white
+        font-weight: bold
+        width: 30%
+        border: none
+        background-color: #a24d45
+    &__list
+        width: 100%
+        display: flex
+        flex-direction: column
+        height: 90%
+        overflow: auto
+    &__link
+        width: 90%
+        align-self: center
+        display: flex
+        text-decoration: none
+        padding: .4rem
+    &__item
+        display: flex
+        width: 100%
+        border: 1px solid white
+        border-radius: 15px
+        align-self: center
+        justify-content: space-around
+        height: 100%
+        background-color: #2e29209c
+        color: white
+        text-decoration: none
+    &__info
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        align-items: center
+        width: 28%
+    &__photo
+        border-radius: 50%
+        height: 100px
+        display: block
+        width: 100%
+        object-fit: cover
+    &__delete
+        color: white
+        border-radius: 15px
+        font-weight: bold
+        width: 100%
+        border: none
+        background-color: #a24d45
+    &__wishes
+        display: flex
+        border: 1px solid white
+        height: 66%
+        align-self: center
+        width: 52%
+        justify-content: space-between
+        align-items: center
+        border-radius: 15px
+        overflow-x: auto
+    &__wisheslist
+        display: flex
+    &__wish
+        border-radius: 20%
+        height: 100px
+        display: block
+        object-fit: cover
+        margin: .2rem
+        width: 100px
+    &__name
+        font-size: 1rem
+        text-decoration: none

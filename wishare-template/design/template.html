@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2016/12/12/23/06/gold-1902874_960_720.png"
+        type="image/x-icon" />
+    <link rel="stylesheet" href="index.css">
+    <title>WishMe</title>
+</head>
+
+<body>
+
+    <!-- welcome panel -->
+    <section class="welcome">
+        <section class="welcome__section1">
+            <h2 class="welcome__title1">Welcome to</h2>
+        </section>
+        <section>
+            <h1 class="welcome__title"> Wishare</h1>
+        </section>
+        <section class="welcome__intro">
+            <p class="welcome__text">Create a WishList </p>
+            <button class="welcome__btn"> <img class="welcome__img" src="gift.svg" alt="gift image" /></button>
+        </section>
+    </section>
+
+
+    <!-- register panel -->
+
+    <section class="register hidden">
+
+        <h1 class="register__title">Register</h1>
+
+        <section class="feedback">
+            <p class="feedback__message">MEEEC error</p>
+        </section>
+        <form class="register__form">
+            <label>Name</label>
+            <input class="register__field" type="text" name="name" placeholder="name">
+            <label>Surname</label>
+            <input class="register__field" type="text" name="surname" placeholder="surname">
+            <label>E-mail</label>
+            <input class="register__field" type="email" name="email" placeholder="e-mail">
+            <label>Birthday</label>
+            <input type="date" name="bday" class="register__field">
+            <label>Password</label>
+            <input class="register__field" type="password" name="password" placeholder="password">
+            <label>Confirm Password</label>
+            <input class="register__field" type="password" name="password" placeholder="password">
+            <button class="register__submit">Register</button>
+
+        </form>
+        <span>Already registered?</span> <a>Log in</a>
+    </section>
+
+    <!-- login panel -->
+    <section class="login hidden">
+
+        <h1 class="login__title">Login</h1>
+
+        <section class="feedback">
+            <p class="feedback__message">MEEEC error</p>
+        </section>
+        <form class="login__form">
+            <label>E-mail</label>
+            <input class="login__field" type="email" name="email" placeholder="e-mail">
+            <label>Password</label>
+            <input class="register__field" type="password" name="password" placeholder="password">
+            <button class="register__submit">Login</button>
+        </form>
+        <span>Not registered yet?</span> <a>Register</a>
+    </section>
+
+    <!-- header panel -->
+
+    <header class="header">
+        <section class="header__section1">
+            <h2 class="header__title">WiShare</h2>
+        </section>
+        <section class="header__section2">
+            <input type="checkbox" id="show-menu">
+            <label class="header__hamburguer" for="show-menu"><img class="header__hamburguericon"
+                    src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png"></i></label>
+            <nav class="header__nav menu">
+                <ul class="menu__list list">
+                    <li><a href="#" class="list__item">My Wishes</a></li>
+                    <li><a href="#" class="list__item">Friends</a></li>
+                    <li><a href="#" class="list__item">Saved Wishes</a></li>
+                    <li><a href="#" class="list__item">My account</a></li>
+                    <li><a href="#" class="list__item">Logout</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+
+    <!-- landing panel -->
+    <section class="landing hidden">
+        <section class="landing__birthday">
+            <h2 class="landing__bdaytitle"> There is no friend's birthday nearby</h2>
+        </section>
+
+        <section class="landing__user user">
+            <img class="user__image" src="https://fakeimg.pl/70x70/" alt="profile picture">
+            <span class="user__welcome"> Hi Username, what do you want to do?</span>
+            <section class="landing__buttons">
+                <button class="landing__btn"> Create a Wish</button>
+                <button class="landing__btn"> Search friends</button>
+            </section>
+        </section>
+
+        <section class="landing__pendingwishes">
+            <h2 class="landing__title">Pending Wishes</h2>
+            <section class="landing__imgwishes">
+                <img src="https://fakeimg.pl/60x60/" alt="pending wishes" class="landing__wish">
+                <img src="https://fakeimg.pl/60x60/" alt="pending wishes" class="landing__wish">
+                <img src="https://fakeimg.pl/60x60/" alt="pending wishes" class="landing__wish">
+            </section>
+        </section>
+
+    </section>
+
+    <!-- myprofile panel -->
+
+    <section class="myprofile hidden">
+        <section class="myprofile__header">
+            <h1 class="myprofile__title">My Profile</h1>
+            <section class="myprofile__buttons">
+                <button class="myprofile__btn"> My profile</button>
+                <button class="myprofile__btn"> Edit profile</button>
+            </section>
+        </section>
+
+        <section class="myprofile__user">
+            <h2 class="myprofile__name">Carlos Smith</h2>
+            <img class="myprofile__image" src="https://fakeimg.pl/90x90/" alt="profile picture">
+            <span class="myprofile__email"> charlssmith@wishare.es</span>
+            <span class="myprofile__bday"> B-day: 23/08</span>
+            <p class="myprofile__description"> I like playing videogames and listen to rock music. I also enjoy going to
+                the gym and eating lots of chocolate</p>
+        </section>
+    </section>
+
+    <!-- edit myprofile panel -->
+    <section class="editprofile hidden">
+        <section class="editprofile__header">
+            <h1 class="editprofile__title">My Profile</h1>
+            <section class="editprofile__buttons">
+                <button class="editprofile__btn"> My profile</button>
+                <button class="editprofile__btn"> Edit profile</button>
+            </section>
+        </section>
+
+        <section class="editprofile">
+            <form class="editprofile__form">
+                <label>Name</label>
+                <input class="editprofile__field" type="text" name="name" placeholder="name">
+                <label>Surname</label>
+                <input class="editprofile__field" type="text" name="surname" placeholder="surname">
+                <label>E-mail</label>
+                <input class="editprofile__field" type="email" name="email" placeholder="e-mail">
+                <label>Profile picture</label>
+                <input type="file" name="pic" accept="image/*">
+                <label>Birthday</label>
+                <input type="date" name="bday" class="register__field">
+                <label>Password</label>
+                <input class="editprofile__field" type="password" name="password" placeholder="password">
+                <label>Confirm Password</label>
+                <input class="editprofile__field" type="password" name="password" placeholder="password">
+                <label>Description</label>
+                <textarea rows="4" cols="50" class="editprofile__description"></textarea>
+                <button class="editprofile__submit">Save</button>
+
+            </form>
+        </section>
+    </section>
+
+    <!-- friends panel -->
+    <section class="friends hidden">
+        <section class="friends__header">
+            <h1 class="friends__title">Friends</h1>
+            <section class="friends__buttons">
+                <button class="friends__btn"> Your friends</button>
+                <button class="friends__btn"> Find friends</button>
+            </section>
+        </section>
+
+        <ul class="friends__list">
+            <a class="friends__link">
+                <li class="friends__item">
+                    <div class="friends__info">
+                        <span class="friends__name"> Marta </span>
+                        <img class="friends__photo" src="https://fakeimg.pl/60x60/" alt="pending wishes">
+                        <button class="friends__delete"> Delete friend</button>
+                    </div>
+                    <div class="friends__wishes">
+                        <ul class="friends__wisheslist">
+                            <li>
+                                <img src="https://fakeimg.pl/60x60/" alt="pending wishes" class="friends__wish">
+                            </li>
+                            <li>
+                                <img src="https://fakeimg.pl/60x60/" alt="pending wishes" class="friends__wish">
+                            </li>
+                            <li>
+                                <img src="https://fakeimg.pl/60x60/" alt="pending wishes" class="friends__wish">
+                            </li>
+                            <li>
+                                <img src="https://fakeimg.pl/60x60/" alt="pending wishes" class="friends__wish">
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+            </a>
+            <a class="friends__link">
+                <li class="friends__item">
+                    <div class="friends__info">
+                        <span class="friends__name"> Marta </span>
+                        <img class="friends__photo" src="https://fakeimg.pl/60x60/" alt="pending wishes">
+                        <button class="friends__delete"> Delete friend</button>
+                    </div>
+                    <div class="friends__wishes">
+                        <ul class="friends__wisheslist">
+                            <li>
+                                <img src="https://fakeimg.pl/60x60/" alt="pending wishes" class="friends__wish">
+                            </li>
+                            <li>
+                                <img src="https://fakeimg.pl/60x60/" alt="pending wishes" class="friends__wish">
+                            </li>
+                            <li>
+                                <img src="https://fakeimg.pl/60x60/" alt="pending wishes" class="friends__wish">
+                            </li>
+                            <li>
+                                <img src="https://fakeimg.pl/60x60/" alt="pending wishes" class="friends__wish">
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+            </a>
+            <a class="friends__link">
+                <li class="friends__item">
+                    <div class="friends__info">
+                        <span class="friends__name"> Marta </span>
+                        <img class="friends__photo" src="https://fakeimg.pl/60x60/" alt="pending wishes">
+                        <button class="friends__delete"> Delete friend</button>
+                    </div>
+                    <div class="friends__wishes">
+                        <ul class="friends__wisheslist">
+                            <li>
+                                <img src="https://fakeimg.pl/60x60/" alt="pending wishes" class="friends__wish">
+                            </li>
+                            <li>
+                                <img src="https://fakeimg.pl/60x60/" alt="pending wishes" class="friends__wish">
+                            </li>
+                            <li>
+                                <img src="https://fakeimg.pl/60x60/" alt="pending wishes" class="friends__wish">
+                            </li>
+                            <li>
+                                <img src="https://fakeimg.pl/60x60/" alt="pending wishes" class="friends__wish">
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+            </a>
+        </ul>
+
+    </section>
+
+    <!-- search friends panel -->
+
+    <section class="searchf hidden">
+        <section class="searchf__header">
+            <h1 class="searchf__title">Friends</h1>
+            <section class="searchf__buttons">
+                <button class="searchf__btn"> Your friends</button>
+                <button class="searchf__btn"> Find friends</button>
+            </section>
+        </section>
+
+        <section class="searchf__search">
+            <span class="searchf__searchtitle">Find your friends by username or e-mail adress</span>
+            <input class="searchf__searchinput" type="search" id="search" name="q">
+            <button class="searchf__searchbtn">Search</button>
+        </section>
+
+        <ul class="searchf__list">
+            <a class="searchf__link">
+                <li class="searchf__item">
+                    <div class="searchf__info">
+                        <span class="searchf__name"> Marta </span>
+                        <img class="searchf__photo" src="https://fakeimg.pl/60x60/" alt="pending wishes">
+                        <button class="searchf__add"> Add friend</button>
+                    </div>
+                    <div class="searchf__wishes">
+                        <ul class="searchf__wisheslist">
+                            <li>
+                                <img src="https://fakeimg.pl/60x60/" alt="pending wishes" class="searchf__wish">
+                            </li>
+                            <li>
+                                <img src="https://fakeimg.pl/60x60/" alt="pending wishes" class="searchf__wish">
+                            </li>
+                            <li>
+                                <img src="https://fakeimg.pl/60x60/" alt="pending wishes" class="searchf__wish">
+                            </li>
+                            <li>
+                                <img src="https://fakeimg.pl/60x60/" alt="pending wishes" class="searchf__wish">
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+            </a>
+        </ul>
+
+    </section>
+
+    <!-- friend detail panel -->
+
+    <section class="friend-detail hidden">
+        <section class="friend-detail__container">
+            <button class="friend-detail__back"> Back </button>
+        </section>
+
+        <section class="friend-detail__user">
+            <h2 class="friend-detail__name">Carlos Smith</h2>
+            <img class="friend-detail__image" src="https://fakeimg.pl/90x90/" alt="profile picture">
+            <span class="friend-detail__email"> charlssmith@wishare.es</span>
+            <span class="friend-detail__bday"> B-day: 23/08</span>
+            <p class="friend-detail__description"> I like playing videogames and listen to rock music. I also enjoy
+                going to
+                the gym and eating lots of chocolate</p>
+        </section>
+
+        <section class="friend-detail__wishes">
+            <h2 class="friend-detail__title">Carlos's Wishes</h2>
+            <ul class="friend-detail__list">
+                <li class="friend-detail__wish">
+                    <div class="friend-detail__detail">
+                        <img class="friend-detail__wimage" src="https://fakeimg.pl/60x60/">
+                        <span class="friend-detail__price">Price</span>
+                    </div>
+                    <div class="friend-detail__info">
+                        <span class="friend-detail__wname"> Title </span>
+                        <p class="friend-detail__wdescription">description plou i fa sol les bruixes es pentinen plou i
+                            fa sol nanan asd loren</p>
+                        <a class="friend-detail__link"> Online Store </a>
+                    </div>
+                    <div class="friend-detail__btn">
+                        <button class="friend-detail__save">Save wish</button>
+                    </div>
+                </li>
+                <li class="friend-detail__wish">
+                    <div class="friend-detail__detail">
+                        <img class="friend-detail__wimage" src="https://fakeimg.pl/60x60/">
+                        <span class="friend-detail__price">Price</span>
+                    </div>
+                    <div class="friend-detail__info">
+                        <span class="friend-detail__wname"> Title </span>
+                        <p class="friend-detail__wdescription">description plou i fa sol les bruixes es pentinen plou i
+                            fa sol nanan asd loren</p>
+                        <a class="friend-detail__link"> Online Store </a>
+                    </div>
+                    <div class="friend-detail__btn">
+                        <button class="friend-detail__save">Save wish</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    <!-- my wishes -->
+    <section class="mywishes hidden">
+        <section class="mywishes__header">
+            <h1 class="mywishes__title">My Wishes</h1>
+            <section class="mywishes__buttons">
+                <button class="mywishes__btn"> My Wishes </button>
+                <button class="mywishes__btn"> Add a Wish </button>
+            </section>
+        </section>
+        <section class="mywishes__wishes">
+            <ul class="mywishes__list">
+                <li class="mywishes__wish">
+                    <div class="mywishes__detail">
+                        <img class="mywishes__wimage" src="https://fakeimg.pl/60x60/">
+                        <span class="mywishes__price">Price</span>
+                    </div>
+                    <div class="mywishes__info">
+                        <span class="mywishes__wname"> Title </span>
+                        <p class="mywishes__wdescription">description plou i fa sol les bruixes es pentinen plou i
+                            fa sol nanan asd loren</p>
+                        <a class="mywishes__link"> Online Store </a>
+                    </div>
+                    <div class="mywishes__buttonscontainer">
+                        <button class="mywishes__button">Edit</button>
+                        <button class="mywishes__button">Remove</button>
+                        <button class="mywishes__button">Given</button>
+                    </div>
+                </li>
+                <li class="mywishes__wish">
+                    <div class="mywishes__detail">
+                        <img class="mywishes__wimage" src="https://fakeimg.pl/60x60/">
+                        <span class="mywishes__price">Price</span>
+                    </div>
+                    <div class="mywishes__info">
+                        <span class="mywishes__wname"> Title </span>
+                        <p class="mywishes__wdescription">description plou i fa sol les bruixes es pentinen plou i
+                            fa sol nanan asd loren</p>
+                        <a class="mywishes__link"> Online Store </a>
+                    </div>
+                    <div class="mywishes__buttonscontainer">
+                        <button class="mywishes__button">Edit</button>
+                        <button class="mywishes__button">Remove</button>
+                        <button class="mywishes__button">Given</button>
+                    </div>
+                </li>
+                <li class="mywishes__wish">
+                    <div class="mywishes__detail">
+                        <img class="mywishes__wimage" src="https://fakeimg.pl/60x60/">
+                        <span class="mywishes__price">Price</span>
+                    </div>
+                    <div class="mywishes__info">
+                        <span class="mywishes__wname"> Title </span>
+                        <p class="mywishes__wdescription">description plou i fa sol les bruixes es pentinen plou i
+                            fa sol nanan asd loren</p>
+                        <a class="mywishes__link"> Online Store </a>
+                    </div>
+                    <div class="mywishes__buttonscontainer">
+                        <button class="mywishes__button">Edit</button>
+                        <button class="mywishes__button">Remove</button>
+                        <button class="mywishes__button">Given</button>
+                    </div>
+                </li>
+                <li class="mywishes__wish">
+                    <div class="mywishes__detail">
+                        <img class="mywishes__wimage" src="https://fakeimg.pl/60x60/">
+                        <span class="mywishes__price">Price</span>
+                    </div>
+                    <div class="mywishes__info">
+                        <span class="mywishes__wname"> Title </span>
+                        <p class="mywishes__wdescription">description plou i fa sol les bruixes es pentinen plou i
+                            fa sol nanan asd loren</p>
+                        <a class="mywishes__link"> Online Store </a>
+                    </div>
+                    <div class="mywishes__buttonscontainer">
+                        <button class="mywishes__button">Edit</button>
+                        <button class="mywishes__button">Remove</button>
+                        <button class="mywishes__button">Given</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </section>
+    <!-- editwish -->
+
+    <section class="editwish hidden">
+        <section class="editwish__header">
+            <h1 class="editwish__title">My Wishes</h1>
+            <section class="editwish__buttons">
+                <button class="editwish__btn"> My Wishes </button>
+                <button class="editwish__btn"> Add a Wish </button>
+            </section>
+        </section>
+        <section class="editwish__content">
+            <form class="editwish__form">
+                <label>Title</label>
+                <input class="editwish__field" type="text" name="name" placeholder="name">
+                <label>Image</label>
+                <input type="file" name="pic" accept="image/*">
+                <label>Price</label>
+                <input class="editwish__field" type="text" name="price" placeholder="price">
+                <label>Link</label>
+                <input class="editwish__field" type="text" name="link" placeholder="online shop">
+                <label>Description</label>
+                <textarea rows="4" cols="50" class="editwish__description"></textarea>
+                <button class="editwish__submit">Save</button>
+            </form>
+        </section>
+
+    </section>
+
+    <!-- saved wishes -->
+
+    <section class="saved-wishes hidden">
+        <section class="saved-wishes__header">
+            <h1 class="saved-wishes__title">Saved Wishes</h1>
+        </section>
+
+        <section class="saved-wishes__wishes">
+            <ul class="saved-wishes__list">
+                <li class="saved-wishes__wish">
+                    <div class="saved-wishes__owner">
+                        <img class="saved-wishes__img" src="https://fakeimg.pl/60x60/">
+                        <h2>Marta's Wish</h2>
+                    </div>
+                    <div class="saved-wishes__detail">
+                        <img class="saved-wishes__wimage" src="https://fakeimg.pl/60x60/">
+                        <span class="saved-wishes__price">Price</span>
+                    </div>
+                    <div class="saved-wishes__info">
+                        <span class="saved-wishes__wname"> Title </span>
+                        <p class="saved-wishes__wdescription">description plou i fa sol les bruixes es pentinen plou i
+                            fa sol nanan asd loren</p>
+                        <a class="saved-wishes__link"> Online Store </a>
+                    </div>
+                    <div class="saved-wishes__buttonscontainer">
+                        <button class="saved-wishes__button">Edit</button>
+                        <button class="saved-wishes__button">Remove</button>
+                        <button class="saved-wishes__button">Given</button>
+                    </div>
+                </li>
+                <li class="saved-wishes__wish">
+                    <div class="saved-wishes__owner">
+                        <img src="https://fakeimg.pl/60x60/">
+                        <h2>Marta's Wish</h2>
+                    </div>
+                    <div class="saved-wishes__detail">
+                        <img class="saved-wishes__wimage" src="https://fakeimg.pl/60x60/">
+                        <span class="saved-wishes__price">Price</span>
+                    </div>
+                    <div class="saved-wishes__info">
+                        <span class="saved-wishes__wname"> Title </span>
+                        <p class="saved-wishes__wdescription">description plou i fa sol les bruixes es pentinen plou i
+                            fa sol nanan asd loren</p>
+                        <a class="saved-wishes__link"> Online Store </a>
+                    </div>
+                    <div class="saved-wishes__buttonscontainer">
+                        <button class="saved-wishes__button">Edit</button>
+                        <button class="saved-wishes__button">Remove</button>
+                        <button class="saved-wishes__button">Given</button>
+                    </div>
+                </li>
+                <li class="saved-wishes__wish">
+                    <div class="saved-wishes__owner">
+                        <img src="https://fakeimg.pl/60x60/">
+                        <h2>Marta's Wish</h2>
+                    </div>
+                    <div class="saved-wishes__detail">
+                        <img class="saved-wishes__wimage" src="https://fakeimg.pl/60x60/">
+                        <span class="saved-wishes__price">Price</span>
+                    </div>
+                    <div class="saved-wishes__info">
+                        <span class="saved-wishes__wname"> Title </span>
+                        <p class="saved-wishes__wdescription">description plou i fa sol les bruixes es pentinen plou i
+                            fa sol nanan asd loren</p>
+                        <a class="saved-wishes__link"> Online Store </a>
+                    </div>
+                    <div class="saved-wishes__buttonscontainer">
+                        <button class="saved-wishes__button">Edit</button>
+                        <button class="saved-wishes__button">Remove</button>
+                        <button class="saved-wishes__button">Given</button>
+                    </div>
+                </li>
+                <li class="saved-wishes__wish">
+                    <div class="saved-wishes__owner">
+                        <img src="https://fakeimg.pl/60x60/">
+                        <h2>Marta's Wish</h2>
+                    </div>
+                    <div class="saved-wishes__detail">
+                        <img class="saved-wishes__wimage" src="https://fakeimg.pl/60x60/">
+                        <span class="saved-wishes__price">Price</span>
+                    </div>
+                    <div class="saved-wishes__info">
+                        <span class="saved-wishes__wname"> Title </span>
+                        <p class="saved-wishes__wdescription">description plou i fa sol les bruixes es pentinen plou i
+                            fa sol nanan asd loren</p>
+                        <a class="saved-wishes__link"> Online Store </a>
+                    </div>
+                    <div class="saved-wishes__buttonscontainer">
+                        <button class="saved-wishes__button">Edit</button>
+                        <button class="saved-wishes__button">Remove</button>
+                        <button class="saved-wishes__button">Given</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    <!-- chatroom section -->
+
+    <section class="chat">
+        <section class="chat__owner-info">
+            <h1 class="chat__owner"> Marta's ChatRoom </h1>
+            <button class="chat__back"> Back </button>
+        </section>
+        <section class="chat__container">
+            <ul class="chat__messages">
+                <li class="chat__message">
+                    <div class="chat_imgcontainer">
+                        <img src="https://fakeimg.pl/60x60/" class="chat__photo" />
+                    </div>
+                    <div class="chat_usercontainer">
+                        <span class="chat__user">Jax</span>
+                        <span class="chat__date">12/12/2019 14:00H</span>
+                        <p class="chat__text"> aquí va el mensaje</p>
+                    </div>
+                </li>
+                <li class="chat__message">
+                    <div class="chat_imgcontainer">
+                        <img src="https://fakeimg.pl/60x60/" class="chat__photo" />
+                    </div>
+                    <div class="chat_usercontainer">
+                        <span class="chat__user">Jax</span>
+                        <span class="chat__date">12/12/2019 14:00H</span>
+                        <p class="chat__text"> aquí va el mensaje</p>
+                    </div>
+                </li>
+                <li class="chat__message">
+                    <div class="chat_imgcontainer">
+                        <img src="https://fakeimg.pl/60x60/" class="chat__photo" />
+                    </div>
+                    <div class="chat_usercontainer">
+                        <span class="chat__user">Jax</span>
+                        <span class="chat__date">12/12/2019 14:00H</span>
+                        <p class="chat__text"> aquí va el mensaje</p>
+                    </div>
+                </li>
+            </ul>
+            <section class="chat_sendmessage">
+                <form class="chat__form">
+                    <textarea class="chat__textarea " name="message" cols="30 " rows="2 "
+                        placeholder="send a message ... "></textarea>
+                    <button class="chat__button">send</button>
+                </form>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>

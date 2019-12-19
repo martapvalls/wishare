@@ -1,0 +1,186 @@
+.saved-wishes {
+  font-family: 'Arbutus Slab', serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.saved-wishes__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid white;
+  background-color: gainsboro;
+  color: slategrey;
+  height: 10%;
+}
+
+.saved-wishes__title {
+  font-size: 1.5rem;
+  height: 45%;
+}
+
+.saved-wishes__wishes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 90%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background-color: gainsboro;
+  color: slategrey;
+  margin-bottom: .5rem;
+  height: 85%;
+}
+
+.saved-wishes__title {
+  margin: 0;
+}
+
+.saved-wishes__list {
+  width: 90%;
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.saved-wishes__owner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid white;
+  height: 32%;
+}
+
+.saved-wishes__img {
+  border-radius: 50%;
+}
+
+.saved-wishes__wish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.saved-wishes__detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48%;
+}
+
+.saved-wishes__wimage {
+  border-radius: 50%;
+}
+
+.saved-wishes__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  padding-top: 1rem;
+  width: 65%;
+  padding: 0;
+}
+
+.saved-wishes__wdescription {
+  width: 100%;
+  padding-left: 1.2rem;
+  font-size: .8rem;
+}
+
+.saved-wishes__buttonscontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-top: 2px solid white;
+  height: 16%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: .3rem;
+}
+
+.saved-wishes__button {
+  margin-right: 1rem;
+  color: slategray;
+  font-weight: bold;
+  width: 32%;
+  border: none;
+  background-color: lavender;
+  border: 1px solid slategray;
+  border-radius: 15px;
+  height: 60%;
+}
+/*# sourceMappingURL=index.css.map */

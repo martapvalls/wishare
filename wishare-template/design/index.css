@@ -1,0 +1,1166 @@
+@import url(https://fonts.googleapis.com/css?family=Erica+One);
+@import url(https://fonts.googleapis.com/css?family=Baloo&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Arbutus+Slab&display=swap);
+html {
+  height: 100vh;
+}
+
+body {
+  background: linear-gradient(to bottom right, #3140c2, #a84edc);
+  height: 100%;
+  width: 100%;
+  font-family: "Baloo", cursive;
+  margin: 0;
+}
+
+#show-menu {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+button:active {
+  transform: scale(0.9);
+}
+
+/* ---------------------- component welcome --------------------------*/
+.welcome {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  align-self: center;
+  flex-direction: column;
+}
+.welcome__section1 {
+  display: flex;
+  height: 30%;
+}
+.welcome__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+.welcome__text {
+  text-decoration: none;
+  width: 60%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #eeeff5;
+}
+.welcome__btn {
+  border: none;
+  background-color: inherit;
+  width: 20%;
+}
+.welcome__img {
+  width: 100%;
+}
+.welcome__title1 {
+  color: #eeeff5;
+  font-size: 2rem;
+}
+.welcome__title {
+  margin: auto;
+  color: #eeeff5;
+  font-size: 4.5em;
+  top: 30%;
+  cursor: default;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50%;
+  -webkit-animation: bounce 1s ease infinite alternate;
+  -webkit-text-stroke: 0.1px #d5c4ff;
+  text-align: center;
+  line-height: 100px;
+  text-shadow: 0 1px 0 #595959, 0 2px 0 #363636, 0 3px 0 #404040, 0 4px 0 #414142, 0 5px 0 #202020, 0 6px 0 #373636f0, 0 7px 0 #2e2d2de6, 0 8px 0 #2c2c2cd6, 0 9px 0 #202020de, 0 10px 10px #7c3fb5;
+}
+
+@-webkit-keyframes bounce {
+  100% {
+    top: -30px;
+    text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 #CCC, 0 7px 0 #CCC, 0 8px 0 #CCC, 0 9px 0 #CCC, 0 30px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+.register {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0e111f;
+}
+.register__title {
+  color: #eeeff5;
+  font-size: 2rem;
+  margin: 0;
+}
+.register__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  border: 1px solid white;
+  border-radius: 20px;
+  height: 62%;
+  background-color: #e4e5e95e;
+}
+.register__field {
+  border-radius: 20px;
+  background-color: inherit;
+  margin-bottom: 1rem;
+  width: 60%;
+  color: #eeeff5;
+}
+.register__submit {
+  border-radius: 15px;
+  width: 30%;
+}
+
+.feedback {
+  border: 1px solid white;
+  background-color: #cfc0ff;
+  border-radius: 15px;
+  width: 60%;
+  margin-bottom: 5%;
+}
+.feedback__message {
+  color: grey;
+  text-align: center;
+}
+
+.login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0e111f;
+}
+.login__title {
+  color: #eeeff5;
+  font-size: 2rem;
+  margin: 0;
+  height: 15%;
+}
+.login__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  border: 1px solid white;
+  border-radius: 20px;
+  height: 28%;
+  background-color: #e4e5e95e;
+}
+.login__field {
+  border-radius: 20px;
+  background-color: inherit;
+  margin-bottom: 1rem;
+  width: 60%;
+  color: #eeeff5;
+}
+.login__submit {
+  border-radius: 15px;
+  width: 30%;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  border-bottom: 1px solid white;
+}
+.header__section1 {
+  display: flex;
+  width: 86%;
+}
+.header__title {
+  display: flex;
+  width: 100%;
+  margin-left: 5%;
+  color: #eeeff5;
+}
+.header__section2 {
+  width: 20%;
+  height: 100%;
+  display: flex;
+}
+.header__hamburguer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+}
+.header__hamburguericon {
+  width: 50%;
+  height: 50%;
+}
+.header__nav {
+  display: none;
+}
+.header #show-menu:checked ~ .menu {
+  display: flex;
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  width: 30%;
+  background-color: white;
+  cursor: pointer;
+}
+.header #show-menu:checked ~ .menu .list {
+  display: flex;
+  flex-direction: column;
+  top: 10vh;
+  height: 25vh;
+  justify-content: space-between;
+  list-style: none;
+  cursor: pointer;
+  align-items: center;
+  padding-left: 0.4rem;
+}
+.header #show-menu:checked ~ .menu .list .list__item {
+  padding: 1rem;
+  align-items: center;
+  padding: 0;
+}
+
+.list__item {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  align-self: center;
+  padding: 0;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-evenly;
+  width: 100%;
+  font-family: "Arbutus Slab", serif;
+}
+.landing__birthday {
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: gainsboro;
+  color: slategrey;
+  width: 87%;
+  display: flex;
+  align-self: center;
+}
+.landing__bdaytitle {
+  font-size: 1.3rem;
+}
+.landing__user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 90%;
+  align-self: center;
+  align-items: center;
+  height: 37%;
+  background-color: gainsboro;
+  color: slategrey;
+}
+.landing__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.landing__btn {
+  border-radius: 10px;
+  width: 46%;
+  color: slategrey;
+  font-weight: bold;
+}
+.landing__pendingwishes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  width: 90%;
+  border-radius: 15px;
+  align-self: center;
+  background-color: gainsboro;
+  color: slategrey;
+  height: 27%;
+}
+.landing__title {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+.landing__imgwishes {
+  display: flex;
+  justify-content: space-evenly;
+  border: 3px solid white;
+  width: 80%;
+  align-content: space-between;
+  height: 63%;
+  border-radius: 15px;
+}
+.landing__wish {
+  align-self: center;
+}
+
+.user__image {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.myprofile {
+  font-family: "Arbutus Slab", serif;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+.myprofile__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  background-color: gainsboro;
+  color: slategrey;
+}
+.myprofile__title {
+  font-size: 1.5rem;
+}
+.myprofile__buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.myprofile__btn {
+  color: slategray;
+  font-weight: bold;
+  width: 30%;
+  border: none;
+  background-color: lavender;
+}
+.myprofile__user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid white;
+  margin-top: 3rem;
+  width: 90%;
+  align-self: center;
+  border-radius: 15px;
+  height: 62%;
+  background-color: gainsboro;
+  color: slategrey;
+}
+.myprofile__image {
+  border-radius: 50%;
+}
+.myprofile__bday {
+  font-size: 1.3rem;
+}
+.myprofile__description {
+  width: 80%;
+  text-align: justify;
+}
+
+.editprofile {
+  font-family: "Arbutus Slab", serif;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: center;
+}
+.editprofile__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  background-color: gainsboro;
+  color: slategrey;
+}
+.editprofile__title {
+  font-size: 1.5rem;
+}
+.editprofile__buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.editprofile__btn {
+  color: slategray;
+  font-weight: bold;
+  width: 30%;
+  border: none;
+  background-color: lavender;
+}
+.editprofile__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  border: 1px solid white;
+  border-radius: 20px;
+  height: 93%;
+  background-color: #dcdcdcb8;
+  align-self: center;
+}
+.editprofile__field {
+  border-radius: 20px;
+  background-color: inherit;
+  margin-bottom: 1rem;
+  width: 50%;
+  color: #eeeff5;
+}
+.editprofile__description {
+  width: 60%;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+.editprofile__submit {
+  border-radius: 15px;
+  color: slategray;
+  font-weight: bold;
+  width: 18%;
+  border: none;
+  background-color: lavender;
+  height: 10%;
+}
+
+.friends {
+  font-family: "Arbutus Slab", serif;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+.friends__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  background-color: gainsboro;
+  color: slategrey;
+}
+.friends__title {
+  font-size: 1.5rem;
+}
+.friends__buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.friends__btn {
+  color: slategray;
+  font-weight: bold;
+  width: 30%;
+  border: none;
+  background-color: lavender;
+}
+.friends__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-evenly;
+}
+.friends__link {
+  width: 90%;
+  align-self: center;
+  display: flex;
+  height: 27%;
+}
+.friends__item {
+  display: flex;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 15px;
+  align-self: center;
+  justify-content: space-around;
+  height: 100%;
+  background-color: gainsboro;
+  color: slategrey;
+}
+.friends__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.friends__name {
+  font-size: 1rem;
+}
+.friends__photo {
+  border-radius: 50%;
+}
+.friends__delete {
+  color: slategray;
+  font-weight: bold;
+  width: 100%;
+  border: none;
+  background-color: lavender;
+}
+.friends__wishes {
+  display: flex;
+  border: 1px solid white;
+  height: 66%;
+  align-self: center;
+  width: 52%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  overflow-x: auto;
+}
+.friends__wisheslist {
+  display: flex;
+}
+.friends__wish {
+  margin: 0.5rem;
+  border-radius: 15px;
+}
+
+.searchf {
+  font-family: "Arbutus Slab", serif;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+.searchf__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  background-color: gainsboro;
+  color: slategrey;
+}
+.searchf__title {
+  font-size: 1.5rem;
+}
+.searchf__buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.searchf__btn {
+  color: slategray;
+  font-weight: bold;
+  width: 30%;
+  border: none;
+  background-color: lavender;
+}
+.searchf__search {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+}
+.searchf__searchtitle {
+  width: 90%;
+  text-align: center;
+  height: 50%;
+  color: lavender;
+}
+.searchf__searchinput {
+  width: 40%;
+  border-radius: 15px;
+}
+.searchf__searchbtn {
+  border-radius: 15px;
+  width: 20%;
+  margin-top: 0.3rem;
+  color: #6f87a7;
+}
+.searchf__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+.searchf__link {
+  width: 90%;
+  align-self: center;
+  display: flex;
+  height: 31%;
+  margin-bottom: 1rem;
+}
+.searchf__item {
+  display: flex;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 15px;
+  align-self: center;
+  justify-content: space-around;
+  height: 100%;
+  background-color: gainsboro;
+  color: slategrey;
+}
+.searchf__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.searchf__name {
+  font-size: 1rem;
+}
+.searchf__photo {
+  border-radius: 50%;
+}
+.searchf__add {
+  color: slategray;
+  font-weight: bold;
+  width: 100%;
+  border: none;
+  background-color: lavender;
+}
+.searchf__wishes {
+  display: flex;
+  border: 1px solid white;
+  height: 66%;
+  align-self: center;
+  width: 52%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  overflow-x: auto;
+}
+.searchf__wisheslist {
+  display: flex;
+}
+.searchf__wish {
+  margin: 0.5rem;
+  border-radius: 15px;
+}
+
+.friend-detail {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+.friend-detail__container {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid white;
+  height: 6%;
+  align-items: flex-end;
+  background-color: gainsboro;
+  color: slategrey;
+}
+.friend-detail__back {
+  height: 50%;
+  margin-right: 1rem;
+  color: slategray;
+  font-weight: bold;
+  width: 26%;
+  border: none;
+  background-color: lavender;
+}
+.friend-detail__user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 90%;
+  align-self: center;
+  background-color: gainsboro;
+  color: slategrey;
+  height: 53%;
+  margin: 0.5rem;
+}
+.friend-detail__image {
+  border-radius: 50%;
+}
+.friend-detail__description {
+  width: 90%;
+  text-align: center;
+}
+.friend-detail__wishes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 90%;
+  align-self: center;
+  background-color: gainsboro;
+  color: slategrey;
+  margin-bottom: 0.5rem;
+  height: 37%;
+}
+.friend-detail__title {
+  margin: 0;
+}
+.friend-detail__list {
+  width: 90%;
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+}
+.friend-detail__wish {
+  display: flex;
+  width: 95%;
+  flex-wrap: wrap;
+  border: 2px solid white;
+  border-radius: 15px;
+  height: 100%;
+}
+.friend-detail__detail {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+}
+.friend-detail__wimage {
+  border-radius: 50%;
+}
+.friend-detail__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  align-content: flex-start;
+  padding-top: 1rem;
+  width: 65%;
+}
+.friend-detail__wdescription {
+  width: 100%;
+  padding-left: 1.2rem;
+  font-size: 0.8rem;
+}
+.friend-detail__btn {
+  align-self: safe;
+  display: flex;
+  margin-left: 20px;
+  width: 100%;
+}
+.friend-detail__save {
+  margin-right: 1rem;
+  color: slategray;
+  font-weight: bold;
+  width: 32%;
+  border: none;
+  background-color: lavender;
+  border: 1px solid slategray;
+  border-radius: 15px;
+}
+
+.mywishes {
+  font-family: "Arbutus Slab", serif;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-between;
+}
+.mywishes__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  background-color: gainsboro;
+  color: slategrey;
+  height: 10%;
+}
+.mywishes__title {
+  font-size: 1.5rem;
+  height: 45%;
+}
+.mywishes__buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 55%;
+  align-items: flex-end;
+}
+.mywishes__btn {
+  color: slategray;
+  font-weight: bold;
+  width: 30%;
+  border: none;
+  background-color: lavender;
+}
+.mywishes__wishes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 90%;
+  align-self: center;
+  background-color: gainsboro;
+  color: slategrey;
+  margin-bottom: 0.5rem;
+  height: 85%;
+}
+.mywishes__title {
+  margin: 0;
+}
+.mywishes__list {
+  width: 90%;
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mywishes__wish {
+  display: flex;
+  width: 95%;
+  flex-wrap: wrap;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+.mywishes__detail {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+}
+.mywishes__wimage {
+  border-radius: 50%;
+}
+.mywishes__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  align-content: flex-start;
+  padding-top: 1rem;
+  width: 65%;
+}
+.mywishes__wdescription {
+  width: 100%;
+  padding-left: 1.2rem;
+  font-size: 0.8rem;
+}
+.mywishes__buttonscontainer {
+  display: flex;
+  width: 100%;
+  border-top: 2px solid white;
+  height: 20%;
+}
+.mywishes__button {
+  margin-right: 1rem;
+  color: slategray;
+  font-weight: bold;
+  width: 32%;
+  border: none;
+  background-color: lavender;
+  border: 1px solid slategray;
+  border-radius: 15px;
+  height: 60%;
+}
+
+.editwish {
+  font-family: "Arbutus Slab", serif;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-between;
+}
+.editwish__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  background-color: gainsboro;
+  color: slategrey;
+  height: 10%;
+}
+.editwish__title {
+  font-size: 1.5rem;
+  height: 69%;
+  margin: 0;
+}
+.editwish__buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 55%;
+  align-items: flex-end;
+}
+.editwish__btn {
+  color: slategray;
+  font-weight: bold;
+  width: 30%;
+  border: none;
+  background-color: lavender;
+}
+.editwish__content {
+  font-family: "Arbutus Slab", serif;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: space-between;
+}
+.editwish__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  border: 1px solid white;
+  border-radius: 20px;
+  height: 93%;
+  background-color: #dcdcdcb8;
+  align-self: center;
+}
+.editwish__field {
+  border-radius: 20px;
+  background-color: inherit;
+  margin-bottom: 1rem;
+  width: 50%;
+  color: #eeeff5;
+}
+.editwish__description {
+  width: 60%;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+.editwish__submit {
+  border-radius: 15px;
+  color: slategray;
+  font-weight: bold;
+  width: 18%;
+  border: none;
+  background-color: lavender;
+  height: 6%;
+}
+
+.saved-wishes {
+  font-family: "Arbutus Slab", serif;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-between;
+}
+.saved-wishes__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  background-color: gainsboro;
+  color: slategrey;
+  height: 10%;
+}
+.saved-wishes__title {
+  font-size: 1.5rem;
+  height: 45%;
+}
+.saved-wishes__wishes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 90%;
+  align-self: center;
+  background-color: gainsboro;
+  color: slategrey;
+  margin-bottom: 0.5rem;
+  height: 85%;
+}
+.saved-wishes__title {
+  margin: 0;
+}
+.saved-wishes__list {
+  width: 90%;
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.saved-wishes__owner {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid white;
+  height: 32%;
+}
+.saved-wishes__img {
+  border-radius: 50%;
+}
+.saved-wishes__wish {
+  display: flex;
+  width: 95%;
+  flex-wrap: wrap;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+.saved-wishes__detail {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+  height: 48%;
+}
+.saved-wishes__wimage {
+  border-radius: 50%;
+}
+.saved-wishes__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  align-content: flex-start;
+  padding-top: 1rem;
+  width: 65%;
+  padding: 0;
+}
+.saved-wishes__wdescription {
+  width: 100%;
+  padding-left: 1.2rem;
+  font-size: 0.8rem;
+}
+.saved-wishes__buttonscontainer {
+  display: flex;
+  width: 100%;
+  border-top: 2px solid white;
+  height: 16%;
+  align-items: center;
+  padding-bottom: 0.3rem;
+}
+.saved-wishes__button {
+  margin-right: 1rem;
+  color: slategray;
+  font-weight: bold;
+  width: 32%;
+  border: none;
+  background-color: lavender;
+  border: 1px solid slategray;
+  border-radius: 15px;
+  height: 60%;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+.chat__owner-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  background-color: gainsboro;
+  color: slategrey;
+  height: 10%;
+}
+.chat__owner {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.chat__back {
+  align-self: flex-end;
+  color: slategray;
+  font-weight: bold;
+  width: 30%;
+  border: none;
+  background-color: lavender;
+}
+.chat__container {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.chat__messages {
+  width: 90%;
+  border: 1px solid grey;
+  border-radius: 15px;
+  height: 80%;
+  align-self: center;
+  background-color: gainsboro;
+}
+.chat__message {
+  width: 95%;
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+.chat__photo {
+  border-radius: 50%;
+}
+.chat__imgcontainer {
+  width: 30%;
+}
+.chat__usercontainer {
+  display: flex;
+  width: 70%;
+  padding-left: 0.4rem;
+}
+.chat__text {
+  margin: 0;
+  height: 50%;
+}
+.chat__form {
+  display: flex;
+  align-self: center;
+}
+.chat__textarea {
+  border-radius: 15px;
+  width: 90%;
+  height: 20%;
+}
+.chat__button {
+  border-radius: 15px;
+  width: 20%;
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=index.css.map */

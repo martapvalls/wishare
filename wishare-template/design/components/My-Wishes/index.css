@@ -1,0 +1,182 @@
+.mywishes {
+  font-family: 'Arbutus Slab', serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mywishes__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid white;
+  background-color: gainsboro;
+  color: slategrey;
+  height: 10%;
+}
+
+.mywishes__title {
+  font-size: 1.5rem;
+  height: 45%;
+}
+
+.mywishes__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 55%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.mywishes__btn {
+  color: slategray;
+  font-weight: bold;
+  width: 30%;
+  border: none;
+  background-color: lavender;
+}
+
+.mywishes__wishes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 90%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background-color: gainsboro;
+  color: slategrey;
+  margin-bottom: .5rem;
+  height: 85%;
+}
+
+.mywishes__title {
+  margin: 0;
+}
+
+.mywishes__list {
+  width: 90%;
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mywishes__wish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+.mywishes__detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75%;
+}
+
+.mywishes__wimage {
+  border-radius: 50%;
+}
+
+.mywishes__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  padding-top: 1rem;
+  width: 65%;
+}
+
+.mywishes__wdescription {
+  width: 100%;
+  padding-left: 1.2rem;
+  font-size: .8rem;
+}
+
+.mywishes__buttonscontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-top: 2px solid white;
+  height: 20%;
+}
+
+.mywishes__button {
+  margin-right: 1rem;
+  color: slategray;
+  font-weight: bold;
+  width: 32%;
+  border: none;
+  background-color: lavender;
+  border: 1px solid slategray;
+  border-radius: 15px;
+  height: 60%;
+}
+/*# sourceMappingURL=index.css.map */
